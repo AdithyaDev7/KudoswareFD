@@ -1,0 +1,14 @@
+{%extends "layout.html"%}
+{%block title%}Registration Page{%endblock%}
+{%block content%}
+<body>
+    <h1>Register</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+    <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+{%endblock%}

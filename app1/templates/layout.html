@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title>
+            {%block title%}{%endblock%}
+        </title>
+        <style type="text/css">
+            nav{
+                background-color:yellow;
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="/welcome/"><h3>Welcome Page</h3></a>
+        </nav>
+        <section>
+            {%block content%}{%endblock%}
+        </section>
+        <footer>
+            <hr>&copy; ABC Pvt.Ltd
+        </footer>
+    </body>
+</html>
+
+    
